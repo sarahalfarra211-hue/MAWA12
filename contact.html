@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | مأوى MAWA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- الناف بار -->
+    <nav class="navbar navbar-expand-lg navbar-light scrolled-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: var(--mawa-olive); font-size: 1.8rem;">
+                مأوى <span style="color: var(--mawa-dusty-pink);">MAWA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="listings.html">العقارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favorites.html">المفضلة</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
+                </ul>
+                <div class="d-flex gap-2 align-items-center">
+                    <a href="login.html" class="btn btn-outline-dark rounded-pill px-4 fw-bold">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-primary rounded-pill px-4 fw-bold">أضف عقارك</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- الهيدر -->
+    <header class="py-5 text-center text-white" style="background: linear-gradient(rgba(92, 110, 79, 0.9), rgba(92, 110, 79, 0.9)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container py-4">
+            <h1 class="display-5 fw-bold mb-2">تواصل معنا</h1>
+            <p class="lead mb-0">نحن هنا للإجابة على استفساراتك ومساعدتك في أي وقت.</p>
+        </div>
+    </header>
+
+    <!-- محتوى الصفحة -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- معلومات التواصل -->
+                <div class="col-lg-4">
+                    <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                        <h4 class="fw-bold mb-4" style="color: var(--mawa-olive);">معلومات التواصل</h4>
+                        
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-box me-3" style="width: 50px; height: 50px; font-size: 1.2rem;"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">العنوان</h6>
+                                <p class="text-muted mb-0">رام الله، شارع الإرسال، مبنى مأوى، فلسطين.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-box me-3" style="width: 50px; height: 50px; font-size: 1.2rem;"><i class="bi bi-telephone-fill"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">الهاتف</h6>
+                                <p class="text-muted mb-0">+970 59 000 0000<br>+970 2 295 0000</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-box me-3" style="width: 50px; height: 50px; font-size: 1.2rem;"><i class="bi bi-envelope-fill"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-1">البريد الإلكتروني</h6>
+                                <p class="text-muted mb-0">info@mawa.ps<br>support@mawa.ps</p>
+                            </div>
+                        </div>
+
+                        <hr>
+                        <h6 class="fw-bold mb-3" style="color: var(--mawa-olive);">تابعنا على</h6>
+                        <div class="d-flex gap-3 fs-4">
+                            <a href="#" class="text-muted"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-muted"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-muted"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="text-muted"><i class="bi bi-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فورم التواصل -->
+                <div class="col-lg-8">
+                    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
+                        <h4 class="fw-bold mb-4" style="color: var(--mawa-olive);">أرسل لنا رسالة</h4>
+                        
+                        <form>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small">الاسم الكامل</label>
+                                    <input type="text" class="form-control bg-light border-0 py-2" placeholder="اسمك هنا..." required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small">البريد الإلكتروني</label>
+                                    <input type="email" class="form-control bg-light border-0 py-2" placeholder="name@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-bold small">الموضوع</label>
+                                <input type="text" class="form-control bg-light border-0 py-2" placeholder="موضوع الرسالة..." required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="form-label fw-bold small">الرسالة</label>
+                                <textarea class="form-control bg-light border-0 py-2" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                            </div>
+                            
+                            <!-- زر الإرسال، حالياً يوجه للرئيسية -->
+                            <a href="index.html" class="btn btn-primary w-100 py-3 fw-bold fs-5 rounded-3 d-block text-decoration-none">
+                                <i class="bi bi-send me-2"></i> إرسال الرسالة
+                            </a>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- الخريطة -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="rounded-4 overflow-hidden shadow-sm" style="height: 400px; background-color: #e5e3df; display: flex; align-items: center; justify-content: center; position: relative;">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1920&q=80" class="w-100 h-100 object-fit-cover opacity-50" alt="خريطة">
+                        <div class="position-absolute text-center bg-white p-4 rounded-4 shadow-lg">
+                            <i class="bi bi-geo-alt-fill fs-1 text-danger"></i>
+                            <h5 class="fw-bold mb-1 mt-2">مقر منصة مأوى</h5>
+                            <p class="text-muted mb-0">رام الله، فلسطين</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="py-5" style="background-color: #eae5d9;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a class="navbar-brand fw-bold mb-3 d-block" href="#" style="color: var(--mawa-olive); font-size: 2rem;">
+                        مأوى <span style="color: var(--mawa-dusty-pink);">MAWA</span>
+                    </a>
+                    <p class="text-muted">منصتك الموثوقة لتأجير البيوت والشقق والاستراحات في فلسطين.</p>
+                    <div class="d-flex gap-3 fs-4 mt-3">
+                        <a href="#" class="text-muted"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-muted"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-muted"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-1">
+                    <h5 class="fw-bold mb-3" style="color: var(--mawa-olive);">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none">الرئيسية</a></li>
+                        <li class="mb-2"><a href="listings.html" class="text-muted text-decoration-none">العقارات</a></li>
+                        <li class="mb-2"><a href="favorites.html" class="text-muted text-decoration-none">المفضلة</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted text-decoration-none">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3" style="color: var(--mawa-olive);">الدعم والمساعدة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">الأسئلة الشائعة</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">سياسة الخصوصية</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fw-bold mb-3" style="color: var(--mawa-olive);">تواصل معنا</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@mawa.ps</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> +970 59 000 0000</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <p class="text-center text-muted mb-0">&copy; 2024 منصة مأوى MAWA. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

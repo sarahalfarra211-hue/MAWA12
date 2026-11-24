@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة الإدارة | مأوى MAWA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        
+        <!-- القائمة الجانبية (Sidebar) - خاصة بالأدمن -->
+        <aside class="dashboard-sidebar">
+            <a class="brand" href="../index.html">
+                مأوى <span>MAWA</span>
+            </a>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="dashboard.html"><i class="bi bi-shield-lock-fill"></i> نظرة عامة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html"><i class="bi bi-people"></i> إدارة المستخدمين</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="properties.html"><i class="bi bi-house-door"></i> إدارة العقارات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bookings.html"><i class="bi bi-calendar-check"></i> الحجوزات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reviews.html"><i class="bi bi-star"></i> التقييمات</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a class="nav-link text-danger" href="../index.html"><i class="bi bi-box-arrow-right"></i> تسجيل خروج</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="dashboard-content">
+            
+            <!-- الهيدر -->
+            <header class="dashboard-header">
+                <div>
+                    <h4 class="fw-bold mb-1" style="color: var(--mawa-olive);">لوحة الإدارة</h4>
+                    <p class="text-muted mb-0 small">مرحباً، إليك ملخص أداء المنصة اليوم.</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-light rounded-circle p-2 shadow-sm"><i class="bi bi-bell"></i></button>
+                    <img src="https://i.pravatar.cc/150?img=68" class="rounded-circle shadow-sm" width="45" height="45" alt="صورة الأدمن">
+                </div>
+            </header>
+
+            <!-- كروت الإحصائيات الأساسية -->
+            <div class="row g-4 mb-4">
+                <div class="col-md-6 col-xl-3">
+                    <div class="stat-card">
+                        <div class="stat-icon olive"><i class="bi bi-people-fill"></i></div>
+                        <div class="stat-value">245</div>
+                        <div class="stat-label">إجمالي المستخدمين</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="stat-card">
+                        <div class="stat-icon success"><i class="bi bi-house-check"></i></div>
+                        <div class="stat-value">58</div>
+                        <div class="stat-label">العقارات النشطة</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="stat-card">
+                        <div class="stat-icon warning"><i class="bi bi-hourglass-split"></i></div>
+                        <div class="stat-value">12</div>
+                        <div class="stat-label">عقارات بانتظار الموافقة</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="stat-card">
+                        <div class="stat-icon pink"><i class="bi bi-calendar2-check"></i></div>
+                        <div class="stat-value">134</div>
+                        <div class="stat-label">إجمالي الحجوزات</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- أحدث العقارات المضافة للمراجعة -->
+                <div class="col-lg-7">
+                    <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h5 class="fw-bold mb-0" style="color: var(--mawa-olive);">عقارات بانتظار الموافقة</h5>
+                            <a href="properties.html" class="btn btn-sm btn-outline-dark rounded-pill">عرض الكل</a>
+                        </div>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>العقار</th>
+                                        <th>المالك</th>
+                                        <th>التاريخ</th>
+                                        <th>إجراء</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=100&q=80" class="rounded-3" style="width: 50px; height: 50px; object-fit: cover;">
+                                                <div>
+                                                    <h6 class="fw-bold mb-0">فيلا الياسمين</h6>
+                                                    <small class="text-muted">رام الله</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>محمد علي</td>
+                                        <td>منذ ساعتين</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-success rounded-circle p-1 px-2" title="موافقة"><i class="bi bi-check-lg"></i></button>
+                                            <button class="btn btn-sm btn-danger rounded-circle p-1 px-2" title="رفض"><i class="bi bi-x-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=100&q=80" class="rounded-3" style="width: 50px; height: 50px; object-fit: cover;">
+                                                <div>
+                                                    <h6 class="fw-bold mb-0">شقة الروضة</h6>
+                                                    <small class="text-muted">نابلس</small>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>سامر خالد</td>
+                                        <td>منذ 5 ساعات</td>
+                                        <td>
+                                            <button class="btn btn-sm btn-success rounded-circle p-1 px-2" title="موافقة"><i class="bi bi-check-lg"></i></button>
+                                            <button class="btn btn-sm btn-danger rounded-circle p-1 px-2" title="رفض"><i class="bi bi-x-lg"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- آخر النشاطات -->
+                <div class="col-lg-5">
+                    <div class="bg-white p-4 rounded-4 shadow-sm h-100">
+                        <h5 class="fw-bold mb-4" style="color: var(--mawa-olive);">آخر النشاطات</h5>
+                        
+                        <div class="d-flex gap-3 mb-3 pb-3 border-bottom">
+                            <div class="stat-icon pink" style="width: 40px; height: 40px; font-size: 1rem; margin: 0;"><i class="bi bi-person-plus"></i></div>
+                            <div>
+                                <p class="small fw-bold mb-0">مستخدم جديد انضم للمنصة</p>
+                                <small class="text-muted">ليلى أحمد (مستأجر) - منذ 10 دقائق</small>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex gap-3 mb-3 pb-3 border-bottom">
+                            <div class="stat-icon success" style="width: 40px; height: 40px; font-size: 1rem; margin: 0;"><i class="bi bi-check-circle"></i></div>
+                            <div>
+                                <p class="small fw-bold mb-0">تم تأكيد حجز جديد</p>
+                                <small class="text-muted">فيلا حديثة - منذ ساعة</small>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-3">
+                            <div class="stat-icon warning" style="width: 40px; height: 40px; font-size: 1rem; margin: 0;"><i class="bi bi-flag"></i></div>
+                            <div>
+                                <p class="small fw-bold mb-0">تم الإبلاغ عن تقييم مسيء</p>
+                                <small class="text-muted">يحتاج مراجعة - منذ 3 ساعات</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

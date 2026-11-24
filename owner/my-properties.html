@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عقاراتي | مأوى MAWA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        
+        <!-- القائمة الجانبية (Sidebar) -->
+        <aside class="dashboard-sidebar">
+            <a class="brand" href="../index.html">
+                مأوى <span>MAWA</span>
+            </a>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html"><i class="bi bi-grid-1x2-fill"></i> نظرة عامة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="my-properties.html"><i class="bi bi-house-door"></i> عقاراتي</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="add-property.html"><i class="bi bi-plus-circle"></i> إضافة عقار</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="booking-requests.html"><i class="bi bi-calendar-check"></i> طلبات الحجز</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a class="nav-link text-danger" href="../index.html"><i class="bi bi-box-arrow-right"></i> تسجيل خروج</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="dashboard-content">
+            
+            <!-- الهيدر -->
+            <header class="dashboard-header">
+                <div>
+                    <h4 class="fw-bold mb-1" style="color: var(--mawa-olive);">إدارة العقارات</h4>
+                    <p class="text-muted mb-0 small">قائمة بجميع العقارات التي قمت بإضافتها.</p>
+                </div>
+                <div class="d-flex gap-2">
+                    <a href="add-property.html" class="btn btn-primary rounded-pill px-4 fw-bold"><i class="bi bi-plus-lg me-1"></i> إضافة عقار</a>
+                </div>
+            </header>
+
+            <!-- جدول العقارات -->
+            <div class="bg-white p-4 rounded-4 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h5 class="fw-bold mb-0">جميع العقارات (3)</h5>
+                    <div class="input-group" style="max-width: 250px;">
+                        <span class="input-group-text bg-light border-0"><i class="bi bi-search"></i></span>
+                        <input type="text" class="form-control bg-light border-0" placeholder="بحث بالاسم...">
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>العقار</th>
+                                <th>النوع</th>
+                                <th>السعر/ليلة</th>
+                                <th>الحالة</th>
+                                <th>التقييم</th>
+                                <th>الإجراءات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- صف 1 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="../img/p7.jpg" onerror="this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=100&q=80'" class="rounded-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                        <div>
+                                            <h6 class="fw-bold mb-0">فيلا حديثة</h6>
+                                            <small class="text-muted">رام الله - الماصيون</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>بيت كامل</td>
+                                <td class="fw-bold" style="color: var(--mawa-dusty-pink);">₪ 450</td>
+                                <td><span class="badge bg-success">نشط</span></td>
+                                <td><span class="text-warning"><i class="bi bi-star-fill"></i></span> 4.9</td>
+                                <td>
+                                    <a href="edit-property.html" class="btn btn-sm btn-outline-dark rounded-circle p-1 px-2" title="تعديل"><i class="bi bi-pencil"></i></a>
+                                    <button class="btn btn-sm btn-outline-danger rounded-circle p-1 px-2" title="حذف"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <!-- صف 2 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=100&q=80" class="rounded-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                        <div>
+                                            <h6 class="fw-bold mb-0">شقة أنيقة</h6>
+                                            <small class="text-muted">نابلس - رفيديا</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>شقة سكنية</td>
+                                <td class="fw-bold" style="color: var(--mawa-dusty-pink);">₪ 250</td>
+                                <td><span class="badge bg-success">نشط</span></td>
+                                <td><span class="text-warning"><i class="bi bi-star-fill"></i></span> 4.7</td>
+                                <td>
+                                    <a href="edit-property.html" class="btn btn-sm btn-outline-dark rounded-circle p-1 px-2" title="تعديل"><i class="bi bi-pencil"></i></a>
+                                    <button class="btn btn-sm btn-outline-danger rounded-circle p-1 px-2" title="حذف"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                            <!-- صف 3 -->
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=100&q=80" class="rounded-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                        <div>
+                                            <h6 class="fw-bold mb-0">استراحة مزرعة</h6>
+                                            <small class="text-muted">الخليل - حلحول</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>مزرعة</td>
+                                <td class="fw-bold" style="color: var(--mawa-dusty-pink);">₪ 600</td>
+                                <td><span class="badge bg-warning text-dark">قيد المراجعة</span></td>
+                                <td><span class="text-muted">-</span></td>
+                                <td>
+                                    <a href="edit-property.html" class="btn btn-sm btn-outline-dark rounded-circle p-1 px-2" title="تعديل"><i class="bi bi-pencil"></i></a>
+                                    <button class="btn btn-sm btn-outline-danger rounded-circle p-1 px-2" title="حذف"><i class="bi bi-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

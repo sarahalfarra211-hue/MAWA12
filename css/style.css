@@ -1,0 +1,313 @@
+/* ==================== المتغيرات (ألوان مأوى) ==================== */
+:root {
+    --mawa-cream: #f8f6f0;
+    --mawa-olive: #5c6e4f;
+    --mawa-dusty-pink: #d49a9d;
+    --mawa-text: #2b2b2b;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--mawa-cream);
+    color: var(--mawa-text);
+    overflow-x: hidden;
+}
+
+/* ==================== الأزرار ==================== */
+.btn-primary {
+    background-color: var(--mawa-dusty-pink) !important;
+    border-color: var(--mawa-dusty-pink) !important;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #c28689 !important;
+    border-color: #c28689 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(212, 154, 157, 0.4);
+}
+
+/* ==================== النافبار ==================== */
+.transparent-nav {
+    background-color: transparent !important;
+    transition: all 0.4s ease;
+    padding: 15px 0;
+}
+.transparent-nav .nav-link,
+.transparent-nav .navbar-brand { color: white !important; }
+
+.scrolled-nav {
+    background-color: var(--mawa-cream) !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 10px 0;
+}
+.scrolled-nav .nav-link { color: var(--mawa-text) !important; }
+.scrolled-nav .navbar-brand span { color: var(--mawa-dusty-pink) !important; }
+.scrolled-nav .navbar-brand { color: var(--mawa-olive) !important; }
+
+.nav-link { font-weight: 600; transition: 0.3s; }
+.nav-link:hover, .nav-link.active { color: var(--mawa-dusty-pink) !important; }
+
+/* ==================== Hero ==================== */
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                      url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+.search-box {
+    max-width: 900px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* حركات الدخول */
+.animate-up {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==================== التصنيفات ==================== */
+.category-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+.icon-box {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(212, 154, 157, 0.1);
+    color: var(--mawa-dusty-pink);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.category-card:hover .icon-box {
+    background-color: var(--mawa-dusty-pink);
+    color: white;
+}
+
+/* ==================== كروت العقارات ==================== */
+.property-card { transition: all 0.3s ease; }
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+.property-img {
+    height: 240px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.property-card:hover .property-img { transform: scale(1.08); }
+.fav-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.fav-btn:hover { background-color: #f8d7da; }
+
+/* ==================== بانر المالكين ==================== */
+.owner-banner {
+    background: linear-gradient(135deg, var(--mawa-olive) 0%, #4a593f 100%);
+}
+
+/* ==================== الفوتر ==================== */
+footer a { transition: 0.3s; }
+footer a:hover { color: var(--mawa-dusty-pink) !important; }
+
+/* ==================== فلتر ثابت ==================== */
+.sticky-filter {
+    position: sticky;
+    top: 100px;
+}
+
+/* ==================== صور المعرض ==================== */
+.main-gallery-img, .side-gallery-img {
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+.main-gallery-img:hover, .side-gallery-img:hover { opacity: 0.9; }
+
+.booking-box { border: 1px solid rgba(0,0,0,0.08) !important; }
+
+input[type="date"] {
+    font-family: 'Cairo', sans-serif;
+    color: var(--mawa-text);
+}
+
+@media (max-width: 768px) {
+    .main-gallery-img { height: 250px !important; }
+    .side-gallery-img { height: 120px !important; }
+}
+
+/* ==================== صفحات Auth ==================== */
+.auth-body { background-color: var(--mawa-cream); }
+.auth-image-section {
+    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+}
+.auth-image-section-register {
+    background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-check:checked + .btn-outline-dark {
+    background-color: var(--mawa-olive);
+    border-color: var(--mawa-olive);
+    color: white;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border: 1px solid var(--mawa-dusty-pink);
+}
+
+/* ==================== لوحات التحكم (Sidebar) ==================== */
+.dashboard-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.dashboard-sidebar {
+    width: 260px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.dashboard-sidebar .brand {
+    padding: 0 25px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--mawa-olive);
+}
+
+.dashboard-sidebar .brand span { color: var(--mawa-dusty-pink); }
+
+.dashboard-sidebar .nav-item { margin: 3px 12px; }
+
+.dashboard-sidebar .nav-link {
+    color: var(--mawa-text);
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.dashboard-sidebar .nav-link:hover {
+    background-color: rgba(212, 154, 157, 0.1);
+    color: var(--mawa-dusty-pink);
+}
+
+.dashboard-sidebar .nav-link.active {
+    background-color: var(--mawa-dusty-pink);
+    color: white !important;
+}
+
+.dashboard-sidebar .nav-link i { font-size: 1.2rem; }
+
+/* المحتوى الرئيسي */
+.dashboard-content {
+    flex: 1;
+    margin-right: 260px;
+    padding: 30px;
+    background-color: var(--mawa-cream);
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    background: white;
+    padding: 18px 24px;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* كروت الإحصائيات */
+.stat-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.stat-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.stat-icon.pink { background: rgba(212, 154, 157, 0.15); color: var(--mawa-dusty-pink); }
+.stat-icon.olive { background: rgba(92, 110, 79, 0.15); color: var(--mawa-olive); }
+.stat-icon.warning { background: rgba(255, 193, 7, 0.15); color: #d39e00; }
+.stat-icon.success { background: rgba(40, 167, 69, 0.15); color: #28a745; }
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--mawa-text);
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* الموبايل: نخفي الـ sidebar */
+@media (max-width: 991px) {
+    .dashboard-sidebar {
+        transform: translateX(100%);
+        width: 240px;
+    }
+    .dashboard-sidebar.open { transform: translateX(0); }
+    .dashboard-content { margin-right: 0; padding: 15px; }
+}

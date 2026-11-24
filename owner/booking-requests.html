@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلبات الحجز | مأوى MAWA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        
+        <!-- القائمة الجانبية (Sidebar) -->
+        <aside class="dashboard-sidebar">
+            <a class="brand" href="../index.html">
+                مأوى <span>MAWA</span>
+            </a>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html"><i class="bi bi-grid-1x2-fill"></i> نظرة عامة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="my-properties.html"><i class="bi bi-house-door"></i> عقاراتي</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="add-property.html"><i class="bi bi-plus-circle"></i> إضافة عقار</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="booking-requests.html"><i class="bi bi-calendar-check"></i> طلبات الحجز</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a class="nav-link text-danger" href="../index.html"><i class="bi bi-box-arrow-right"></i> تسجيل خروج</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="dashboard-content">
+            
+            <!-- الهيدر -->
+            <header class="dashboard-header">
+                <div>
+                    <h4 class="fw-bold mb-1" style="color: var(--mawa-olive);">طلبات الحجز</h4>
+                    <p class="text-muted mb-0 small">راجع طلبات الحجز القادمة من المستأجرين واتخذ الإجراء المناسب.</p>
+                </div>
+            </header>
+
+            <!-- أدوات التصفية -->
+            <div class="d-flex gap-2 mb-4 flex-wrap">
+                <button class="btn btn-dark rounded-pill px-4 active">الكل (5)</button>
+                <button class="btn btn-light rounded-pill px-4 border">قيد الانتظار (2)</button>
+                <button class="btn btn-light rounded-pill px-4 border">مقبولة (2)</button>
+                <button class="btn btn-light rounded-pill px-4 border">مرفوضة (1)</button>
+            </div>
+
+            <!-- قائمة الطلبات -->
+            <div class="row g-4">
+                
+                <!-- طلب 1 (معلق) -->
+                <div class="col-12">
+                    <div class="bg-white p-4 rounded-4 shadow-sm border-start border-warning border-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://i.pravatar.cc/150?img=5" class="rounded-circle" width="50" height="50">
+                                    <div>
+                                        <h6 class="fw-bold mb-0">سارة زاهر</h6>
+                                        <small class="text-muted"><i class="bi bi-telephone me-1"></i> 0599123456</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <p class="text-muted small mb-0"><i class="bi bi-house me-1"></i> فيلا حديثة</p>
+                                <p class="text-muted small mb-0"><i class="bi bi-calendar me-1"></i> 15 - 18 نوفمبر 2024</p>
+                                <p class="text-muted small mb-0"><i class="bi bi-people me-1"></i> 2 ضيوف</p>
+                            </div>
+                            <div class="col-md-3 text-md-end">
+                                <span class="badge bg-warning text-dark mb-2">قيد الانتظار</span>
+                                <div class="d-flex gap-2 justify-content-md-end">
+                                    <button class="btn btn-sm btn-success rounded-pill px-3 fw-bold">قبول</button>
+                                    <button class="btn btn-sm btn-danger rounded-pill px-3 fw-bold">رفض</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- طلب 2 (معلق) -->
+                <div class="col-12">
+                    <div class="bg-white p-4 rounded-4 shadow-sm border-start border-warning border-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://i.pravatar.cc/150?img=12" class="rounded-circle" width="50" height="50">
+                                    <div>
+                                        <h6 class="fw-bold mb-0">عمر خالد</h6>
+                                        <small class="text-muted"><i class="bi bi-telephone me-1"></i> 0598987654</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <p class="text-muted small mb-0"><i class="bi bi-house me-1"></i> شقة أنيقة</p>
+                                <p class="text-muted small mb-0"><i class="bi bi-calendar me-1"></i> 20 - 22 نوفمبر 2024</p>
+                                <p class="text-muted small mb-0"><i class="bi bi-people me-1"></i> 3 ضيوف</p>
+                            </div>
+                            <div class="col-md-3 text-md-end">
+                                <span class="badge bg-warning text-dark mb-2">قيد الانتظار</span>
+                                <div class="d-flex gap-2 justify-content-md-end">
+                                    <button class="btn btn-sm btn-success rounded-pill px-3 fw-bold">قبول</button>
+                                    <button class="btn btn-sm btn-danger rounded-pill px-3 fw-bold">رفض</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- طلب 3 (مقبول) -->
+                <div class="col-12">
+                    <div class="bg-white p-4 rounded-4 shadow-sm border-start border-success border-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://i.pravatar.cc/150?img=33" class="rounded-circle" width="50" height="50">
+                                    <div>
+                                        <h6 class="fw-bold mb-0">محمد علي</h6>
+                                        <small class="text-muted"><i class="bi bi-telephone me-1"></i> 0597777888</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <p class="text-muted small mb-0"><i class="bi bi-house me-1"></i> استراحة مزرعة</p>
+                                <p class="text-muted small mb-0"><i class="bi bi-calendar me-1"></i> 1 - 3 ديسمبر 2024</p>
+                                <p class="text-muted small mb-0"><i class="bi bi-people me-1"></i> 5 ضيوف</p>
+                            </div>
+                            <div class="col-md-3 text-md-end">
+                                <span class="badge bg-success mb-2">مقبول</span>
+                                <p class="small text-muted mb-0">تم القبول بواسطتك</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- طلب 4 (مرفوض) -->
+                <div class="col-12">
+                    <div class="bg-white p-4 rounded-4 shadow-sm border-start border-danger border-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 mb-3 mb-md-0">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://i.pravatar.cc/150?img=9" class="rounded-circle" width="50" height="50">
+                                    <div>
+                                        <h6 class="fw-bold mb-0">ليلى أحمد</h6>
+                                        <small class="text-muted"><i class="bi bi-telephone me-1"></i> 0595556666</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3 mb-md-0">
+                                <p class="text-muted small mb-0"><i class="bi bi-house me-1"></i> فيلا حديثة</p>
+                                <p class="text-muted small mb-0"><i class="bi bi-calendar me-1"></i> 10 - 12 ديسمبر 2024</p>
+                                <p class="text-muted small mb-0"><i class="bi bi-people me-1"></i> 4 ضيوف</p>
+                            </div>
+                            <div class="col-md-3 text-md-end">
+                                <span class="badge bg-danger mb-2">مرفوض</span>
+                                <p class="small text-muted mb-0">التواريخ غير متاحة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

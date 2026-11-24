@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة العقارات | مأوى MAWA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        
+        <!-- القائمة الجانبية (Sidebar) -->
+        <aside class="dashboard-sidebar">
+            <a class="brand" href="../index.html">
+                مأوى <span>MAWA</span>
+            </a>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="dashboard.html"><i class="bi bi-shield-lock-fill"></i> نظرة عامة</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="users.html"><i class="bi bi-people"></i> إدارة المستخدمين</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="properties.html"><i class="bi bi-house-door"></i> إدارة العقارات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bookings.html"><i class="bi bi-calendar-check"></i> الحجوزات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reviews.html"><i class="bi bi-star"></i> التقييمات</a>
+                </li>
+                <li class="nav-item mt-4">
+                    <a class="nav-link text-danger" href="../index.html"><i class="bi bi-box-arrow-right"></i> تسجيل خروج</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="dashboard-content">
+            
+            <!-- الهيدر -->
+            <header class="dashboard-header">
+                <div>
+                    <h4 class="fw-bold mb-1" style="color: var(--mawa-olive);">إدارة العقارات</h4>
+                    <p class="text-muted mb-0 small">مراجعة العقارات المضافة حديثاً والموافقة على نشرها.</p>
+                </div>
+            </header>
+
+            <!-- أدوات التصفية -->
+            <div class="d-flex gap-2 mb-4 flex-wrap">
+                <button class="btn btn-dark rounded-pill px-4 active">قيد المراجعة (12)</button>
+                <button class="btn btn-light rounded-pill px-4 border">النشطة (58)</button>
+                <button class="btn btn-light rounded-pill px-4 border">المرفوضة (4)</button>
+            </div>
+
+            <!-- شبكة العقارات -->
+            <div class="row g-4">
+                
+                <!-- عقار 1 -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="card property-card border-0 shadow-sm rounded-4 h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" class="card-img-top property-img" style="height: 180px;" alt="فيلا">
+                            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">قيد المراجعة</span>
+                        </div>
+                        <div class="card-body p-3">
+                            <h6 class="card-title fw-bold mb-1 fs-5">فيلا الياسمين</h6>
+                            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> رام الله - الماصيون</p>
+                            <p class="text-muted small mb-3"><i class="bi bi-person"></i> المالك: محمد علي</p>
+                            
+                            <div class="d-flex gap-2 mt-3 border-top pt-3">
+                                <button class="btn btn-success w-50 rounded-pill fw-bold btn-sm"><i class="bi bi-check-lg"></i> موافقة</button>
+                                <button class="btn btn-outline-danger w-50 rounded-pill fw-bold btn-sm"><i class="bi bi-x-lg"></i> رفض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- عقار 2 -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="card property-card border-0 shadow-sm rounded-4 h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80" class="card-img-top property-img" style="height: 180px;" alt="شقة">
+                            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">قيد المراجعة</span>
+                        </div>
+                        <div class="card-body p-3">
+                            <h6 class="card-title fw-bold mb-1 fs-5">شقة الروضة</h6>
+                            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> نابلس - رفيديا</p>
+                            <p class="text-muted small mb-3"><i class="bi bi-person"></i> المالك: سامر خالد</p>
+                            
+                            <div class="d-flex gap-2 mt-3 border-top pt-3">
+                                <button class="btn btn-success w-50 rounded-pill fw-bold btn-sm"><i class="bi bi-check-lg"></i> موافقة</button>
+                                <button class="btn btn-outline-danger w-50 rounded-pill fw-bold btn-sm"><i class="bi bi-x-lg"></i> رفض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- عقار 3 -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="card property-card border-0 shadow-sm rounded-4 h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" class="card-img-top property-img" style="height: 180px;" alt="مزرعة">
+                            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3">قيد المراجعة</span>
+                        </div>
+                        <div class="card-body p-3">
+                            <h6 class="card-title fw-bold mb-1 fs-5">استراحة الوادي</h6>
+                            <p class="text-muted small mb-2"><i class="bi bi-geo-alt"></i> الخليل - حلحول</p>
+                            <p class="text-muted small mb-3"><i class="bi bi-person"></i> المالك: أحمد محمود</p>
+                            
+                            <div class="d-flex gap-2 mt-3 border-top pt-3">
+                                <button class="btn btn-success w-50 rounded-pill fw-bold btn-sm"><i class="bi bi-check-lg"></i> موافقة</button>
+                                <button class="btn btn-outline-danger w-50 rounded-pill fw-bold btn-sm"><i class="bi bi-x-lg"></i> رفض</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

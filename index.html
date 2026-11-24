@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مأوى MAWA | منصة تأجير البيوت في فلسطين</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent-nav" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: var(--mawa-olive); font-size: 1.8rem;">
+                مأوى <span style="color: var(--mawa-dusty-pink);">MAWA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="listings.html">العقارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favorites.html">المفضلة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+                </ul>
+                <div class="d-flex gap-2 align-items-center">
+                    <a href="login.html" class="btn btn-outline-dark rounded-pill px-4 fw-bold">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-primary rounded-pill px-4 fw-bold">أضف عقارك</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- الهيرو -->
+    <header class="hero-section d-flex align-items-center">
+        <div class="container text-center text-white hero-content">
+            <h1 class="display-3 fw-bold mb-3 animate-up">ابحث عن مأواك المثالي في فلسطين</h1>
+            <p class="lead mb-5 animate-up delay-1">استكشف أجمل البيوت والشقق والاستراحات في مدننا الحبيبة، واحجز إقامتك بضغطة زر.</p>
+            
+            <div class="search-box bg-white p-3 rounded-4 shadow-lg mx-auto animate-up delay-2">
+                <form class="row g-2 align-items-center">
+                    <div class="col-md-3">
+                        <div class="input-group">
+                            <span class="input-group-text bg-transparent border-0"><i class="bi bi-geo-alt text-muted"></i></span>
+                            <input type="text" class="form-control border-0 bg-light" placeholder="المدينة (مثل: رام الله)">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="date" class="form-control border-0 bg-light">
+                    </div>
+                    <div class="col-md-2">
+                        <input type="date" class="form-control border-0 bg-light">
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select border-0 bg-light">
+                            <option selected>الضيوف</option>
+                            <option value="1">شخص واحد</option>
+                            <option value="2">شخصان</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="listings.html" class="btn btn-primary w-100 py-2 fw-bold fs-5">ابحث الآن</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- التصنيفات -->
+    <section class="py-5 mt-4">
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-center" style="color: var(--mawa-olive);">ماذا تبحث عنه؟</h2>
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-3">
+                    <a href="listings.html" class="text-decoration-none">
+                        <div class="category-card p-4 text-center bg-white rounded-4 shadow-sm h-100 border-0">
+                            <div class="icon-box mb-3 mx-auto"><i class="bi bi-house-door fs-1"></i></div>
+                            <h5 class="fw-bold mb-0" style="color: var(--mawa-text);">بيوت كاملة</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="listings.html" class="text-decoration-none">
+                        <div class="category-card p-4 text-center bg-white rounded-4 shadow-sm h-100 border-0">
+                            <div class="icon-box mb-3 mx-auto"><i class="bi bi-building fs-1"></i></div>
+                            <h5 class="fw-bold mb-0" style="color: var(--mawa-text);">شقق سكنية</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="listings.html" class="text-decoration-none">
+                        <div class="category-card p-4 text-center bg-white rounded-4 shadow-sm h-100 border-0">
+                            <div class="icon-box mb-3 mx-auto"><i class="bi bi-door-open fs-1"></i></div>
+                            <h5 class="fw-bold mb-0" style="color: var(--mawa-text);">غرف خاصة</h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a href="listings.html" class="text-decoration-none">
+                        <div class="category-card p-4 text-center bg-white rounded-4 shadow-sm h-100 border-0">
+                            <div class="icon-box mb-3 mx-auto"><i class="bi bi-tree fs-1"></i></div>
+                            <h5 class="fw-bold mb-0" style="color: var(--mawa-text);">مزارع واستراحات</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- العقارات المميزة -->
+    <section class="py-5" style="background-color: #f4f1ea;">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-end mb-4">
+                <div>
+                    <h2 class="fw-bold mb-1" style="color: var(--mawa-olive);">عقارات مميزة</h2>
+                    <p class="text-muted mb-0">أماكن مختارة لك بعناية</p>
+                </div>
+                <a href="listings.html" class="btn btn-outline-dark rounded-pill px-4 fw-bold">عرض الكل</a>
+            </div>
+            
+            <div class="row g-4">
+                <!-- الكرت الأول -->
+                <div class="col-md-4">
+                    <div class="card property-card border-0 shadow-sm rounded-4 h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img src="img/p7.jpg" class="card-img-top property-img" alt="فيلا حديثة" onerror="this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80'">
+                            <button class="btn btn-light position-absolute top-0 end-0 m-3 rounded-circle shadow-sm fav-btn"><i class="bi bi-heart text-danger"></i></button>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h5 class="card-title fw-bold mb-0">فيلا حديثة</h5>
+                                <span class="badge bg-warning text-dark"><i class="bi bi-star-fill"></i> 4.9</span>
+                            </div>
+                            <p class="text-muted mb-3"><i class="bi bi-geo-alt"></i> رام الله - الماصيون</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3 border-top pt-3">
+                                <span class="fw-bold fs-5" style="color: var(--mawa-dusty-pink);">₪ 450 <small class="text-muted fs-6 fw-normal">/ ليلة</small></span>
+                                <a href="property-details.html" class="btn btn-primary btn-sm rounded-pill px-3 fw-bold">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الكرت الثاني -->
+                <div class="col-md-4">
+                    <div class="card property-card border-0 shadow-sm rounded-4 h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=600&q=80" class="card-img-top property-img" alt="شقة أنيقة">
+                            <button class="btn btn-light position-absolute top-0 end-0 m-3 rounded-circle shadow-sm fav-btn"><i class="bi bi-heart text-danger"></i></button>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h5 class="card-title fw-bold mb-0">شقة أنيقة</h5>
+                                <span class="badge bg-warning text-dark"><i class="bi bi-star-fill"></i> 4.7</span>
+                            </div>
+                            <p class="text-muted mb-3"><i class="bi bi-geo-alt"></i> نابلس - رفيديا</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3 border-top pt-3">
+                                <span class="fw-bold fs-5" style="color: var(--mawa-dusty-pink);">₪ 250 <small class="text-muted fs-6 fw-normal">/ ليلة</small></span>
+                                <a href="property-details.html" class="btn btn-primary btn-sm rounded-pill px-3 fw-bold">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- الكرت الثالث -->
+                <div class="col-md-4">
+                    <div class="card property-card border-0 shadow-sm rounded-4 h-100">
+                        <div class="position-relative overflow-hidden rounded-top-4">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=600&q=80" class="card-img-top property-img" alt="استراحة مزرعة">
+                            <button class="btn btn-light position-absolute top-0 end-0 m-3 rounded-circle shadow-sm fav-btn"><i class="bi bi-heart text-danger"></i></button>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between mb-2">
+                                <h5 class="card-title fw-bold mb-0">استراحة مزرعة</h5>
+                                <span class="badge bg-warning text-dark"><i class="bi bi-star-fill"></i> 5.0</span>
+                            </div>
+                            <p class="text-muted mb-3"><i class="bi bi-geo-alt"></i> الخليل - حلحول</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3 border-top pt-3">
+                                <span class="fw-bold fs-5" style="color: var(--mawa-dusty-pink);">₪ 600 <small class="text-muted fs-6 fw-normal">/ ليلة</small></span>
+                                <a href="property-details.html" class="btn btn-primary btn-sm rounded-pill px-3 fw-bold">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بانر المالكين -->
+    <section class="py-5 mb-5">
+        <div class="container">
+            <div class="owner-banner rounded-4 p-5 text-center text-white shadow-lg">
+                <h2 class="fw-bold mb-3">هل تملك عقاراً؟</h2>
+                <p class="lead mb-4">شارك مأواك مع الآخرين واربح من خلال منصة مأوى.</p>
+                <a href="register.html" class="btn btn-light rounded-pill px-5 py-3 fw-bold fs-5 text-dark">أضف عقارك الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="py-5" style="background-color: #eae5d9;">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a class="navbar-brand fw-bold mb-3 d-block" href="#" style="color: var(--mawa-olive); font-size: 2rem;">
+                        مأوى <span style="color: var(--mawa-dusty-pink);">MAWA</span>
+                    </a>
+                    <p class="text-muted">منصتك الموثوقة لتأجير البيوت والشقق والاستراحات في فلسطين.</p>
+                    <div class="d-flex gap-3 fs-4 mt-3">
+                        <a href="#" class="text-muted"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-muted"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-muted"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-1">
+                    <h5 class="fw-bold mb-3" style="color: var(--mawa-olive);">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none">الرئيسية</a></li>
+                        <li class="mb-2"><a href="listings.html" class="text-muted text-decoration-none">العقارات</a></li>
+                        <li class="mb-2"><a href="favorites.html" class="text-muted text-decoration-none">المفضلة</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="fw-bold mb-3" style="color: var(--mawa-olive);">الدعم والمساعدة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">الأسئلة الشائعة</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fw-bold mb-3" style="color: var(--mawa-olive);">تواصل معنا</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@mawa.ps</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> +970 59 000 0000</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3">
+            <p class="text-center text-muted mb-0">&copy; 2024 منصة مأوى MAWA. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- السكربتات -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- سكربت تغيير لون الناف بار -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 50) {
+                navbar.classList.remove('transparent-nav');
+                navbar.classList.add('scrolled-nav');
+            } else {
+                navbar.classList.add('transparent-nav');
+                navbar.classList.remove('scrolled-nav');
+            }
+        });
+    </script>
+</body>
+</html>

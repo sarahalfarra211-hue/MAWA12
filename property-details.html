@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل العقار | مأوى MAWA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- الناف بار -->
+    <nav class="navbar navbar-expand-lg navbar-light scrolled-nav sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: var(--mawa-olive); font-size: 1.8rem;">
+                مأوى <span style="color: var(--mawa-dusty-pink);">MAWA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-bold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="listings.html">العقارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="favorites.html">المفضلة</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+                </ul>
+                <div class="d-flex gap-2 align-items-center">
+                    <a href="login.html" class="btn btn-outline-dark rounded-pill px-4 fw-bold">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-primary rounded-pill px-4 fw-bold">أضف عقارك</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- محتوى الصفحة -->
+    <div class="container py-5 mt-3">
+        
+        <!-- عنوان العقار -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
+            <div>
+                <h1 class="fw-bold mb-2" style="color: var(--mawa-olive);">فيلا حديثة مع مسبح خاص</h1>
+                <p class="text-muted mb-0 fs-5"><i class="bi bi-geo-alt-fill text-danger"></i> رام الله - الماصيون، فلسطين</p>
+            </div>
+            <div class="d-flex align-items-center gap-3 mt-3 mt-md-0">
+                <span class="badge bg-warning text-dark fs-6 py-2 px-3"><i class="bi bi-star-fill"></i> 4.9 (120 تقييم)</span>
+                <button class="btn btn-outline-dark rounded-pill px-3"><i class="bi bi-share"></i> مشاركة</button>
+                <!-- زر الحفظ مع data-id -->
+                <button class="btn btn-outline-danger rounded-pill px-3 add-to-fav" id="detailsFavBtn" data-id="1"><i class="bi bi-heart"></i> حفظ</button>
+            </div>
+        </div>
+
+        <!-- معرض الصور -->
+        <div class="row g-2 mb-5 rounded-4 overflow-hidden shadow-sm">
+            <div class="col-md-6">
+                <img src="img/h1.jpg" class="img-fluid w-100 main-gallery-img" alt="صورة رئيسية" style="height: 400px; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80'">
+            </div>
+            <div class="col-md-6">
+                <div class="row g-2 h-100">
+                    <div class="col-6">
+                        <img src="img/h2.jpg" class="img-fluid w-100 side-gallery-img" alt="صورة 2" style="height: 196px; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=400&q=80'">
+                    </div>
+                    <div class="col-6">
+                        <img src="img/h4.jpg" class="img-fluid w-100 side-gallery-img" alt="صورة 3" style="height: 196px; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=400&q=80'">
+                    </div>
+                    <div class="col-6">
+                        <img src="img/p9.jpg" class="img-fluid w-100 side-gallery-img" alt="صورة 4" style="height: 196px; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80'">
+                    </div>
+                    <div class="col-6 position-relative">
+                        <img src="img/p7.jpg" class="img-fluid w-100 side-gallery-img" alt="صورة 5" style="height: 196px; object-fit: cover;" onerror="this.src='https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=400&q=80'">
+                        <button class="btn btn-light position-absolute bottom-0 end-0 m-2 rounded-pill shadow-sm fw-bold">
+                            <i class="bi bi-images"></i> +15 صورة
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- التفاصيل وصندوق الحجز -->
+        <div class="row g-5">
+            
+            <div class="col-lg-7">
+                <div class="d-flex align-items-center justify-content-between border-bottom pb-4 mb-4">
+                    <div>
+                        <h4 class="fw-bold mb-1">يستضيفك: أحمد محمود</h4>
+                        <p class="text-muted mb-0">مالك العقار • عضو منذ 2021</p>
+                    </div>
+                    <img src="https://i.pravatar.cc/150?img=11" class="rounded-circle shadow-sm" width="60" height="60" alt="صورة المالك">
+                </div>
+
+                <h4 class="fw-bold mb-3" style="color: var(--mawa-olive);">مميزات المكان</h4>
+                <div class="row g-3 mb-5">
+                    <div class="col-6 col-md-4">
+                        <div class="d-flex align-items-center gap-2 text-muted">
+                            <i class="bi bi-house-door fs-4 text-dark"></i><span>بيت كامل</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="d-flex align-items-center gap-2 text-muted">
+                            <i class="bi bi-people fs-4 text-dark"></i><span>يتسع لـ 8 أشخاص</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="d-flex align-items-center gap-2 text-muted">
+                            <i class="bi bi-door-closed fs-4 text-dark"></i><span>4 غرف نوم</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="d-flex align-items-center gap-2 text-muted">
+                            <i class="bi bi-droplet fs-4 text-dark"></i><span>3 حمامات</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="d-flex align-items-center gap-2 text-muted">
+                            <i class="bi bi-wifi fs-4 text-dark"></i><span>واي فاي مجاني</span>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div class="d-flex align-items-center gap-2 text-muted">
+                            <i class="bi bi-water fs-4 text-dark"></i><span>مسبح خاص</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="fw-bold mb-3" style="color: var(--mawa-olive);">عن هذا المكان</h4>
+                <p class="text-muted lh-lg mb-4">
+                    استمتع بإقامة لا تُنسى في هذه الفيلا الحديثة والهادئة. تتميز الفيلا بتصميم عصري، مساحات واسعة، وإطلالة رائعة. تحتوي على مسبح خاص، حديقة خارجية، ومكان مخصص للشواء.
+                </p>
+                <hr>
+
+                <h4 class="fw-bold mb-3 mt-4" style="color: var(--mawa-olive);">الموقع</h4>
+                <div class="rounded-4 overflow-hidden shadow-sm" style="height: 300px; background-color: #e5e3df; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1000&q=80" class="w-100 h-100 object-fit-cover opacity-50" alt="خريطة">
+                    <div class="position-absolute text-center bg-white p-3 rounded-3 shadow-sm">
+                        <i class="bi bi-geo-alt-fill fs-1 text-danger"></i>
+                        <h6 class="fw-bold mb-0 mt-2">رام الله - الماصيون</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="booking-box bg-white p-4 rounded-4 shadow-lg border border-light sticky-filter">
+                    <div class="d-flex justify-content-between align-items-end mb-4">
+                        <div>
+                            <span class="fs-3 fw-bold" style="color: var(--mawa-dusty-pink);">₪ 450</span>
+                            <span class="text-muted">/ ليلة</span>
+                        </div>
+                        <span class="text-warning small"><i class="bi bi-star-fill"></i> 4.9</span>
+                    </div>
+
+                    <form>
+                        <div class="row g-2 mb-3">
+                            <div class="col-6">
+                                <label class="form-label small fw-bold text-muted mb-1">تاريخ الوصول</label>
+                                <input type="date" class="form-control bg-light border-0">
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label small fw-bold text-muted mb-1">تاريخ المغادرة</label>
+                                <input type="date" class="form-control bg-light border-0">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label small fw-bold text-muted mb-1">الضيوف</label>
+                            <select class="form-select bg-light border-0">
+                                <option>شخص واحد</option>
+                                <option selected>شخصان</option>
+                                <option>3 أشخاص</option>
+                                <option>4 أشخاص</option>
+                            </select>
+                        </div>
+                        <a href="checkout.html" class="btn btn-primary w-100 py-3 fw-bold fs-5 rounded-3 mb-3 d-block">احجز الآن</a>
+                        <p class="text-center text-muted small mb-0">لن يتم خصم أي مبلغ الآن</p>
+                    </form>
+
+                    <div class="mt-4 pt-4 border-top">
+                        <div class="d-flex justify-content-between mb-2 text-muted">
+                            <span>₪ 450 × 3 ليالي</span><span>₪ 1,350</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2 text-muted">
+                            <span>رسوم الخدمة</span><span>₪ 50</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between fw-bold fs-5">
+                            <span>الإجمالي</span><span>₪ 1,400</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <footer class="py-4 mt-5" style="background-color: #eae5d9;">
+        <div class="container text-center">
+            <p class="text-muted mb-0">&copy; 2024 منصة مأوى MAWA. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // سكربت زر الحفظ في المفضلة
+        document.addEventListener('DOMContentLoaded', function() {
+            const favBtn = document.getElementById('detailsFavBtn');
+            if (!favBtn) return;
+            
+            const propertyId = favBtn.getAttribute('data-id');
+            let favorites = JSON.parse(localStorage.getItem('mawaFavorites')) || [];
+
+            // تحديث الحالة إذا كان محفوظ
+            if (favorites.includes(propertyId)) {
+                favBtn.innerHTML = '<i class="bi bi-heart-fill"></i> تم الحفظ';
+                favBtn.querySelector('i').classList.replace('bi-heart', 'bi-heart-fill');
+            }
+
+            favBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const icon = this.querySelector('i');
+                let currentFavs = JSON.parse(localStorage.getItem('mawaFavorites')) || [];
+
+                if (currentFavs.includes(propertyId)) {
+                    currentFavs = currentFavs.filter(id => id !== propertyId);
+                    this.innerHTML = '<i class="bi bi-heart"></i> حفظ';
+                    this.querySelector('i').classList.replace('bi-heart-fill', 'bi-heart');
+                } else {
+                    currentFavs.push(propertyId);
+                    this.innerHTML = '<i class="bi bi-heart-fill"></i> تم الحفظ';
+                    this.querySelector('i').classList.replace('bi-heart', 'bi-heart-fill');
+                }
+                localStorage.setItem('mawaFavorites', JSON.stringify(currentFavs));
+            });
+        });
+    </script>
+</body>
+</html>
